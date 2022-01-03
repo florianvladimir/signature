@@ -1,0 +1,7 @@
+<input type="number" [(ngModel)]="type">
+<p>1=<a href="https://github.com/tsand/responsive-sketchpad" target="_blank">responsive-sketchpad</a></p>
+<p>2=<a href="https://github.com/jakubfiala/atrament.js?utm_source=designernews" target="_blank">Atrament.js</a></p>
+<input type="color" [(ngModel)]="color">
+<p>Bitte unterschreiben Sie hier</p>
+<app-responsive-s [color]="color" *ngIf="type!==2"></app-responsive-s>
+<app-atrament [color]="color" *ngIf="type===2"></app-atrament>

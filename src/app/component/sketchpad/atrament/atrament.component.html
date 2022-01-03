@@ -1,0 +1,6 @@
+<canvas id="sketchpadA" style="border: #006d68 solid 3px"></canvas>
+<button (click)="clear()">Alles löschä</button>
+<button (click)="erase()">{{erasing?'Zeichnä':'Gumälä'}}</button>
+<button class="btn btn-default" (click)="image()">Unterschrift bestätigen</button>
+
+<img [src]="url">
